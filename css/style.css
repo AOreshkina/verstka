@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+.container{
+    display: grid; 
+}
+header {
+    background-color: #ffffff;
+    color: #ffffff;
+    position: fixed;
+    width: 1920px;
+    height: 85px;
+    left: 0px;
+    top: 1px;
+    }
+
+#zag{
+    position: absolute;
+    left: 14.32%;
+    right: 81.53%;
+    top: 0.61%;
+    bottom: 98.93%;
+}
+nav {
+    position: absolute;
+    width: 557px;
+    height: 24px;
+    left: 527px;
+    top: 31px;
+}
+
+.ael{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #292929;
+}
+
+#a1{
+    position: absolute;
+    left: 27.45%;
+    right: 67.55%;
+    top: 0.61%;
+    bottom: 98.92%;
+
+
+}
+
+#a2 {
+    position: absolute;
+    left: 36.2%;
+    right: 59.53%;
+    top: 0.61%;
+    bottom: 98.92%;
+
+}
+
+#a3 {
+    position: absolute;
+    left: 44.17%;
+    right: 50.47%;
+    top: 0.61%;
+    bottom: 98.92%;
+}
+
+#a4 {
+    position: absolute;
+    left: 53.28%;
+    right: 43.54%;
+    top: 0.61%;
+    bottom: 98.92%;
+    
+}
+.but {
+    position: absolute;
+    width: 277px;
+    height: 51px;
+    left: 1367px;
+    top: 18px;  
+}
+
+.firstpage {
+    position: absolute;
+    width: 1920px;
+    height: 895px;
+    left: 0px;
+    top: 86px;
+}
+.ftext{
+    position: absolute;
+    width: 440px;
+    height: 384px;
+    left: 275px;
+    top: 261px;
+}
+
+.secondpage {
+    position: absolute;
+    width: 1920px;
+    height: 1606px;
+    left: 0px;
+    top: 981px;
+
+}
+
+.thirdpage{
+    position: absolute;
+    width: 1920px;
+    height: 922px;
+    left: 0px;
+    top: 3509px;
+}
+
+.fourpage{
+    position: absolute;
+    width: 1920px;
+    height: 936px;
+    left: 0px;
+    top: 3509px;
+}
+
+.how-it-work{
+    position: absolute;
+    width: 1391px;
+    height: 327px;
+    left: 275px;
+    top: 1150px;
+}
+
+.cl21{
+    position: absolute;
+    width: 390px;
+    height: 937px;
+    left: 275px;
+    top: 1395px;
+
+}
+
+.cl22{
+
+    position: absolute;
+    width: 392px;
+    height: 854px;
+    left: 760px;
+    top: 1682px;
+}
+
+.cl23{
+
+    position: absolute;
+    width: 441px;
+    height: 856px;
+    left: 1247px;
+    top: 1449px;
+}
+
+.text31{
+    position: absolute;
+    width: 580px;
+    height: 230px;
+    left: 207px;
+    top: 2897px;
+
+}
+
+.video {
+    position: absolute;
+    width: 895.84px;
+    height: 516.11px;
+    left: 818px;
+    top: 2816px;
+}
+
+footer {
+    background-color: #245852;
+    position: absolute;
+    width: 1920px;
+    height: 654px;
+    left: 0px;
+    top: 5099px;
+    }
+
+
