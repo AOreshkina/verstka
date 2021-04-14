@@ -65,19 +65,19 @@ header {
 
     .header-container{
         position: relative;
-        top: 0px;
+        top: 17px;
         left: 0px;
         max-height: 85px;
         max-width: 1920px;
         display: grid;
         grid-template-columns: 275px 80px 172px 557px 283px 277px 276px;
-        grid-template-rows: 17px 51px 17px;
+        grid-template-rows:  51px ;
         align-items: center;
         
         grid-template-areas: 
-        ". . . . . . ."
+       
         ". logotip . nava . hb ."
-        ". . . . . . ."
+        
    
     }
 
@@ -100,7 +100,7 @@ header {
         position: relative;
         top: 0px;
         left: 0px;
-        max-height: 24px;
+        max-height: 51px;
         max-width: 557px;
         display: grid;
         grid-template-columns: 96px 72px 82px 72px 103px 71px 61px;
@@ -132,11 +132,18 @@ header {
          min-height: 51px;
          background: #01996D;
          color: #ffffff;
-         padding: 13px 50px 13px 50px;
+         /*padding-left: 50px ;
+         padding-top: 13px;
+         padding-right: 50px;
+         padding-bottom: 13px;*/
+        
+
          font-family: Lato;
          font-style: normal;
          font-weight: normal;
          font-size: 20px;
+         line-height: 25px;
+        text-align: center;
          
     }
 
@@ -150,6 +157,7 @@ header {
         display: grid;
         grid-template-columns: 96px 35px 183px;
         grid-template-rows: 51;
+        align-items: center;
         
         grid-template-areas: 
         
@@ -158,6 +166,10 @@ header {
     }
 
 
+
+
+
+    
 
 
     .footer-block > p{
