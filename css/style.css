@@ -46,43 +46,120 @@ header {
         grid-area: logotip;
     }
 
-    nav > .a1{
-        font-family: Lato;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        grid-area: nava1;
-    }
+    nav {
 
-    nav > .a2{
-        font-family: Lato;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        grid-area: nava2;
-    }
+        grid-area: nava;
 
-    nav > .a3{
         font-family: Lato;
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
         line-height: 24px;
-        grid-area: nava3;
-    }
-
-    nav > .a4{
-        font-family: Lato;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        grid-area: nava4;
+        
     }
 
     
+    .header-buttons{
+        grid-area: hb;
+    }
+
+    .header-container{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        max-height: 85px;
+        max-width: 1920px;
+        display: grid;
+        grid-template-columns: 275px 80px 172px 557px 283px 277px 276px;
+        grid-template-rows: 17px 51px 17px;
+        align-items: center;
+        
+        grid-template-areas: 
+        ". . . . . . ."
+        ". logotip . nava . hb ."
+        ". . . . . . ."
+   
+    }
+
+
+    #nav1{
+        grid-area: nav11;
+    }
+
+    #nav2{
+        grid-area: nav12;
+    }
+    #nav3{
+        grid-area: nav13;
+    }
+    #nav4{
+        grid-area: nav14;
+    }
+
+    .navi-container{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        max-height: 24px;
+        max-width: 557px;
+        display: grid;
+        grid-template-columns: 96px 72px 82px 72px 103px 71px 61px;
+        grid-template-rows: auto;
+        align-items: center;
+        
+        grid-template-areas: 
+        
+        "nav11 . nav12 . nav13 . nav14";
+    }
+
+    #sign-in-butt {
+        grid-area: signin;
+         
+       background: #ffffff;
+       color: #000000;
+       font-family: Lato;
+       font-style: normal;
+       font-weight: 500;
+       font-size: 20px;
+       line-height: 24px;
+     }
+
+     #start-trial-butt{
+        grid-area: starts;     
+         border: 0;
+         border-radius: 0;
+         min-width: 183px;
+         min-height: 51px;
+         background: #01996D;
+         color: #ffffff;
+         padding: 13px 50px 13px 50px;
+         font-family: Lato;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 20px;
+         
+    }
+
+    .header-buttons-contain{
+
+        position: relative;
+        top: 0px;
+        left: 0px;
+        max-height: 51px;
+        max-width: 277px;
+        display: grid;
+        grid-template-columns: 96px 35px 183px;
+        grid-template-rows: 51;
+        
+        grid-template-areas: 
+        
+        "signin . starts";
+
+    }
+
+
+
+
     .footer-block > p{
 
         grid-area: p-foot;
@@ -170,8 +247,5 @@ header {
         ". . ."
         ". a4-foot ."
         ". . .";
-
-
-        
     }
 
