@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
+@font-face{
+
+    font-family: 'Georgia';
+    src: url('../fonts/georgiab.ttf') format('ttf');
+
+    font-weight: bold;
+    font-style: normal;
+    }
 
 
 
@@ -126,8 +134,9 @@ header {
 
      #start-trial-butt{
         grid-area: starts;     
-         border: 0;
-         border-radius: 0;
+        border: 1px solid #01996D;
+        box-sizing: border-box;
+        border-radius: 4px;
          min-width: 183px;
          min-height: 51px;
          background: #01996D;
@@ -165,13 +174,101 @@ header {
 
     }
 
+ /*Page1*/
+
+    .first-text > p{
+        grid-area: h1f;
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 74px;
+
+        color: #01996D;
+    }
+    .first-text > div{
+        grid-area: divf;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 31px;
+
+        color: #484848;
+    }
+
+
+ .first-text{
+     grid-area: first-text-one;
+     display: grid;
+
+     grid-template-columns: 440px;
+        grid-template-rows: 148px 30px 123px;
+        
+        
+        grid-template-areas: 
+        "h1f"
+        "."
+        "divf";
+
+
+ }
+
+    .button-fp > button{
+        grid-area: buttonf;
+        width: 227px;
+        height: 65px;
+        background: #01996D;
+        border: 1px solid #01996D;
+        box-sizing: border-box;
+        border-radius: 4px;
+        color:#FFFFFF;
+
+    }
+
+ .button-fp{
+     grid-area: bfp;
+
+     display: grid;
+     width: 440px;
+     height: 83px;
+
+      grid-template-columns: 227px 213px;
+        grid-template-rows: 18px 65px;
+        
+        
+        grid-template-areas: 
+        ". ."
+        "buttonf .";
+ }
+ .first-page{
+
+        position: relative;
+        top: 0px;
+        left: 0px;
+        max-height: 895px;
+        max-width: 1920px;
+        background-image: url(../img/radu-florin-CwTBt6jyagQ-unsplash.jpg); 
+        display: grid;
+        grid-template-columns: 275px 440px 1205px;
+        grid-template-rows: 175px 301px 18px 65px 336px;
+        align-items: center; 
+        
+        grid-template-areas: 
+        ". . ."
+        ". first-text-one ."
+        ". . ."
+        ". bfp ."
+        ". . .";
+ }
+
+ /*second page*/
+
+ 
 
 
 
-
-    
-
-
+/*footer*/
     .footer-block > p{
 
         grid-area: p-foot;
