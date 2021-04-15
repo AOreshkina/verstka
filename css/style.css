@@ -252,7 +252,7 @@ header {
         display: grid;
         grid-template-columns: 275px 440px 1205px;
         grid-template-rows: 175px 301px 18px 65px 336px;
-        align-items: center; 
+        align-items: start; 
         
         grid-template-areas: 
         ". . ."
@@ -264,8 +264,361 @@ header {
 
  /*second page*/
 
+ #how-txt{
+
+
+    grid-area: howtxt;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 157%;
+    color: #424242;
+
+}
+
+#understand{
+    grid-area: unders;
+    position: relative;
+    height:158px;
+    width: 584px;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 157%;
+
+    color: #01996D;
+}
+
+#second-text{
+    grid-area: secondtxt;
+    position: relative;
+    max-height:119px;
+    max-width: 671px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+    color: #424242;
+}
+
+  .how-it-work{
+      grid-area: howitwork;
+      position: relative;
+      top: 0px;
+      left: 275px;
+      display: grid;
+      grid-template-columns: 584px 136px 671px 22px;
+      grid-template-rows: 38px 155px 52px;
+      align-items: center; 
+      justify-items: start;
+    
+    grid-template-areas: 
+    "howtxt . . ."
+    "unders . secondtxt ."
+    ". . . .";
+  }
+  
+  .image-end-text{
+    grid-area: imgtxt;
+    display: grid;
+    grid-template-columns: 275px 390px 95px 390px 95px 410px 265px;
+    grid-template-rows: 1141px;
+    align-items: center; 
+    justify-items: start;
+    
+    grid-template-areas: 
+    ". cl21 . cl22 . cl23 .";
+
+  }
+  .nadp{
+    grid-area: nadpis;
+  }
+
+  #cl01{
+   
+    position: relative;
+    width: 157px;
+    height: 225px;
+    left: 0px;
+    top: 0px;
+    
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 150px;
+    line-height: 150%;
+    /* identical to box height, or 225px */
+    
+    text-align: center;
+    
+    color: rgba(1, 153, 109, 0.2);
+  }
+
+  #pers{
+    grid-area: person;
+    position: relative;;
+    left: 88px;
+    
+    bottom: 90px;
+    
+    
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 150%;
+    /* identical to box height, or 45px */
+    
+    text-align: center;
+    
+    color: #000000;
+  }
+
+  #text01{
+      grid-area: text001;
+      font-family: Lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        color: #424242;
+  }
+
+  #img21{
+      grid-area: img01;
+  }
+
+
+  .cl21{
+      grid-area: cl21;
+      display: grid;
+      grid-template-columns: 390px;
+      grid-template-rows: 180px 55px 150px 60px 492px 204px;
+      align-items: center; 
+      justify-items: start;
+    
+    grid-template-areas: 
+    "nadpis"
+    "."
+    "text001"
+    "."
+    "img01"
+    ".";
+      
+  }
+
+
+
+  #cl02{
+   
+    position: relative;
+    width: 157px;
+    height: 225px;
+    left: 0px;
+    top: 0px;
+    
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 150px;
+    line-height: 150%;
+    /* identical to box height, or 225px */
+    
+    text-align: center;
+    
+    color: rgba(1, 153, 109, 0.2);
+  }
+
+  #w-and-u{
+    grid-area: person;
+    position: relative;;
+    left: 88px;
+    
+    bottom: 90px;
+    
+    
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 150%;
+    /* identical to box height, or 45px */
+    
+    text-align: center;
+    
+    color: #000000;
+  }
+
+
+  .nadp02{
+      grid-area: nadp2;
+  }
+
+  #text02{
+        grid-area: text2;
+        ont-family: Lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        /* or 30px */
+        color: #424242;
+  }
+
+  #img22{
+      grid-area: img022;
+  }
+
+
+  .cl22{
+    grid-area: cl22;
+    display: grid;
+    grid-template-columns: 390px;
+    grid-template-rows: 287px 179px 55px 90px 37px 492px;
+    align-items: center; 
+    justify-items: start;
+  
+    grid-template-areas: 
+    "."
+    "nadp2"
+    "."
+    "text2"
+    "."
+    "img022";
+  }
  
 
+
+
+
+    .nadp03{
+        grid-area: nadp3;
+    }
+
+    #cl03{
+        position: relative;
+    width: 175px;
+    height: 225px;
+    left: 0px;
+    top: 0px;
+    
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 150px;
+    line-height: 150%;
+    /* identical to box height, or 225px */
+    
+    text-align: center;
+    
+    color: rgba(1, 153, 109, 0.2);
+
+    }
+
+    #alivio03{
+        grid-area: person;
+        position: relative;;
+        left: 88px;
+        
+        bottom: 90px;
+        
+        
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 150%;
+        /* identical to box height, or 45px */
+        
+        text-align: center;
+        
+        color: #000000;
+      }
+
+
+    #text03{
+        grid-area: text3;
+        ont-family: Lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        /* or 30px */
+        color: #424242;
+    }
+    #img23{
+        grid-area: img023;
+    }
+
+    .cl23{
+        grid-area: cl23;
+        display: grid;
+        grid-template-columns: 440px;
+        grid-template-rows: 226px 90px 48px 492px 231px;
+        align-items: center; 
+        justify-items: start;
+      
+        grid-template-areas: 
+        "nadp3"
+        "text3"
+        "."
+        "img023"
+        ".";
+    }
+   
+/* .second-page{
+
+    position: relative;
+    top: 895px;
+    left: 0px;
+    max-height: 1606px;
+    max-width: 1920px;
+    background-color: #FFFFFF; 
+    display: grid;
+    grid-template-columns: 275px 1413px 232px;
+    grid-template-rows: 169px 245px 1141px 51px;
+    align-items: center; 
+    
+    grid-template-areas: 
+    ". . ."
+    ". howitwork ."
+    ". imgtxt ."
+    ". . .";
+}*/
+
+/*thirdpage*/
+
+.text31{
+    grid-area: text031;
+}
+.video{
+    grid-area: vid;
+}
+
+.thirdpage{
+
+    position: relative;
+    top: 2504px;
+    left: 0px;
+    max-height: 922px;
+    max-width: 1920px;
+    background-color:  #245852;
+    ; 
+    display: grid;
+    grid-template-columns: 207px 580px 31px 896px 206px;
+    grid-template-rows: 229px 516px 177px;
+    align-items: center; 
+    
+    grid-template-areas: 
+    ". . ."
+    ". howitwork ."
+    ". img";
+}
 
 
 /*footer*/
