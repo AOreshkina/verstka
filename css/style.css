@@ -671,12 +671,47 @@ line-height: 25px;
 
 /*pagefour*/
 
+.imag {
+    position: relative;
+width: 638.46px;
+height: 573.26px;
+right: 0px;
+top: 0px;
+
+background: rgba(1, 153, 109, 0.2);
+border-radius: 18.1125px;
+}
+
+#img4{
+    position: relative;
+right: 113.75px;
+bottom: 0.1px;
+left: 97.11px;
+
+}
+
+.image-and-card{
+    grid-area: image-card;
+    
+}
+
+.pagefour > .text{
+    grid-area: text4;
+}
+
 .pagefour{
     position: relative;
     left: 0px;
     top: 0px;
     width: 1920px;
-    height: 930px;
+    height: 936px;
+    display: grid;
+    grid-template-columns: 275px 699px 671px 275px;
+    grid-template-rows: 120px 648px 168px;
+    grid-template-areas: 
+    ". . . ."
+    ". image-card text4 ."
+    ". . . ."
     
 }
 
