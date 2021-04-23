@@ -627,17 +627,17 @@ header {
     box-sizing: border-box;
     border-radius: 4px;
     font-family: Lato;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
     color:#FFFFFF;
 }
 
 .text31{
     grid-area: text031;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 80%;
     grid-template-rows: 81px 158px 33px 39px 57px 65px 83px;
     align-items: center; 
     grid-template-areas: 
@@ -663,7 +663,7 @@ line-height: 25px;
     background-color:  #245852;
      
     display: grid;
-    grid-template-columns: 10.7% 30.2% 1.6% 47% 10.5%;
+    grid-template-columns: 10.7% 30.2% 1.6% 47% 10.6%px;
     grid-template-rows: 229px 516px 177px;
     align-items: center; 
     
@@ -678,12 +678,12 @@ line-height: 25px;
 
 .imag {
     position: relative;
-width: 638.46px;
-height: 573.26px;
-right: 0px;
+/*width: 638.46px;
+height: 573.26px;*/
+right: 20%;
 top: 0px;
 
-background: rgba(1, 153, 109, 0.2);
+
 border-radius: 18.1125px;
 }
 
@@ -761,7 +761,7 @@ color: #000000;
     .card-text-2{
         grid-area: card2;
         display: grid;
-        grid-template-columns: 180px;
+        grid-template-columns: 100%;
         grid-template-rows: 25px 16px 16px 16px 17px 30px;
         grid-template-areas: 
     "ct-div"
@@ -781,7 +781,7 @@ color: #000000;
     top: -161px;
     left: -61px;
     display: grid;
-    grid-template-columns: 61px 13px 45px 58px 37px 27px 55px;
+    grid-template-columns: 20.6% 4.4% 15% 19.6% 12.5% 9% 18.9%;
     grid-template-rows: 23px 23px 14px 7px 58px 10px 19px 20px 120px;
     justify-items: center;
     align-items: center;
@@ -829,7 +829,7 @@ color: #FFFFFF;
 .pagefour > .text{
     grid-area: text4;
     display: grid;
-    grid-template-columns: 584px;
+    grid-template-columns: 100%;
     grid-template-rows: 39px 10px 158px 22px 81px 40px 65px;
     
     grid-template-areas: 
@@ -848,10 +848,9 @@ color: #FFFFFF;
     position: relative;
     left: 0px;
     top: 0px;
-    width: 1920px;
     height: 936px;
     display: grid;
-    grid-template-columns: 275px 699px 671px 275px;
+    grid-template-columns: 14% 36.4% 35.6% 14%;
     grid-template-rows: 120px 648px 168px;
     grid-template-areas: 
     ". . . ."
@@ -935,7 +934,7 @@ color: #FFFFFF;
         top: 0px;
         left: 0px;
         max-height: 654px;
-        max-width: 1920px;
+
         display: grid;
         grid-template-columns: 14% 7% 79%;
         grid-template-rows: 95px 40px 75px 30px 60px 30px 60px 30px 60px 30px 144px;
