@@ -11,11 +11,16 @@
     font-style: normal;
     }
 
- body{
-     max-width: 1920px;
- }
 
- img {width: 100%; max-width: 100%;}
+    body{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+ img {
+    display: block;
+    width: 100%; 
+    max-width: 100%;}
 
 header {
     background-color: #ffffff;
@@ -31,6 +36,7 @@ header {
     }
 
     footer {
+        top: 0%;
     background-color: #245852;
     grid-area: foot;
     }
@@ -40,11 +46,11 @@ header {
         
         top:1px;
         max-width: 1920px;
-        max-height: 5099px;
+        height: 5099px;
         
         display: grid; 
         grid-template-columns: 11% 39% 39%7 11%;
-        grid-template-rows:   86px auto 654px;
+        grid-template-rows:   1.7% 85.3% 13%;
     
         grid-template-areas: 
         "head head head head"
@@ -150,7 +156,7 @@ header {
         box-sizing: border-box;
         border-radius: 4px;
          width: 100%;
-         height: 51px;;
+         height: 100%;
          background: #01996D;
          color: #ffffff;
          /*padding-left: 50px ;
@@ -186,7 +192,7 @@ header {
 
     }
 
- /*Page1*/
+ /*Page first*/
 
     .first-text > p{
         grid-area: h1f;
@@ -215,7 +221,7 @@ header {
      display: grid;
 
         grid-template-columns: 100%;
-        grid-template-rows: 148px 30px 123px;
+        grid-template-rows: 49% 10% 41%;
         
         
         grid-template-areas: 
@@ -228,8 +234,9 @@ header {
 
     .button-fp > button{
         grid-area: buttonf;
+        margin-top: 1px;
         width: 100%;
-        height: 83px;
+        height: 65px;
         background: #01996D;
         border: 1px solid #01996D;
         box-sizing: border-box;
@@ -245,8 +252,9 @@ header {
    /*  width: 440px;
      height: 83px;*/
 
+    
       grid-template-columns: 51.6% 48.4%;
-        grid-template-rows: 18px 65px;
+        grid-template-rows: 60% 80%;
         
         
         grid-template-areas: 
@@ -258,12 +266,12 @@ header {
         position: relative;
         top: 0%;
         left: 0%;
-     /*   max-height: 895px;
-        max-width: 1920px;*/
+        height: 17.55%;
+        width: 100%;
         background-image: url(../img/BG.png); 
         display: grid;
         grid-template-columns: 14% 23% 63%;
-        grid-template-rows: 175px 301px 18px 65px 336px;
+        grid-template-rows: 19.5% 38.6% 2% 7.3% 32.6%;
         align-items: start; 
         
         grid-template-areas: 
@@ -332,11 +340,11 @@ header {
   .how-it-work{
       grid-area: howitwork;
       position: relative;
-      top: 0px;
+      top: 0%;
       left: 14%;
       display: grid;
       grid-template-columns: 41% 9.6% 47.5% 1.9%;
-      grid-template-rows: 38px 155px 52px;
+      grid-template-rows: 15.5% 63% 21.5%;
       align-items: center; 
       justify-items: start;
     
@@ -351,7 +359,7 @@ header {
     grid-area: imgtxt;
     display: grid;
     grid-template-columns: 14% 20% 15% 20% 15% 22% 14%;
-    grid-template-rows: 1141px;
+    grid-template-rows: 100%;
     align-items: center; 
     justify-items: start;
     
@@ -366,10 +374,10 @@ header {
   #cl01{
    
     position: relative;
-    width: 157px;
-    height: 225px;
-    left: 0px;
-    top: 0px;
+    /*width: 157px;
+    height: 225px;*/
+    left: 0%;
+    top: 0%;
     
     font-family: Georgia;
     font-style: normal;
@@ -386,9 +394,9 @@ header {
   #pers{
     grid-area: person;
     position: relative;;
-    left: 88px;
+    left: 50%;
     
-    bottom: 90px;
+    bottom: 120px;
     
     
     font-family: Georgia;
@@ -404,6 +412,7 @@ header {
   }
 
   .cl21>.second-text{
+      top: 0px;
       grid-area: text001;
       
   }
@@ -417,7 +426,7 @@ header {
       grid-area: cl21;
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 180px 55px 150px 60px 492px 204px;
+      grid-template-rows: 15.8% 4.8% 13% 5.3% 43% 18.1%;
       align-items: center; 
       justify-items: start;
     
@@ -436,10 +445,10 @@ header {
   #cl02{
    
     position: relative;
-    width: 157px;
-    height: 225px;
-    left: 0px;
-    top: 0px;
+    /*width: 157px;
+    height: 225px;*/
+    left: 0%;
+    top: 0%;
     
     font-family: Georgia;
     font-style: normal;
@@ -458,7 +467,7 @@ header {
     position: relative;;
     left: 88px;
     
-    bottom: 90px;
+    bottom: 120px;
     
     
     font-family: Georgia;
@@ -492,7 +501,7 @@ header {
     grid-area: cl22;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 287px 179px 55px 90px 37px 492px;
+    grid-template-rows: 25% 15.7% 4.8% 7.9% 3.3% 60%;
     align-items: center; 
     justify-items: start;
   
@@ -538,13 +547,13 @@ header {
         position: relative;;
         left: 88px;
         
-        bottom: 90px;
+        bottom: 120px;
         
         
         font-family: Georgia;
         font-style: normal;
         font-weight: bold;
-        font-size: 1.875;
+        font-size: 1.875em;
         line-height: 150%;
         /* identical to box height, or 45px */
         
@@ -566,7 +575,7 @@ header {
         grid-area: cl23;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 226px 90px 48px 492px 231px;
+        grid-template-rows: 20.8% 8.3% 4.4% 45.3% 21.2%;
         align-items: center; 
         justify-items: start;
       
@@ -581,14 +590,14 @@ header {
  .secondpage{
 
     position: relative;
-    top: 0px;
-    left: -14%;
-   /* max-height: 1606px;
-    max-width: 1920px;*/
+    top: 0%;
+    left: -10%;
+    height: 31.5%;
+   /* max-width: 1920px;*/
     background-color: #FFFFFF; 
     display: grid;
     grid-template-columns: 14% 73.6% 12.4%;
-    grid-template-rows: 169px 245px 1141px 51px;
+    grid-template-rows: 10.7% 15.5% 72.3% 1.5%;
     align-items: center; 
     
     grid-template-areas: 
@@ -640,8 +649,8 @@ header {
 .text31{
     grid-area: text031;
     display: grid;
-    grid-template-columns: 80%;
-    grid-template-rows: 81px 158px 33px 39px 57px 65px 83px;
+    grid-template-columns: 100%;
+    grid-template-rows: 15.7% 30.6% 6.4% 7.6% 11% 12.6% 16.1%;
     align-items: center; 
     grid-template-areas: 
     "."
@@ -653,8 +662,15 @@ header {
     "."
 
 }
-.video{
+video
+{
+    max-width: 100%;
+    max-height: auto;
+}
+.video-class{
     grid-area: vid;
+   width: 100%;
+ 
 }
 
 .thirdpage{
@@ -662,12 +678,12 @@ header {
     position: relative;
     top: 38px;
     left: 0%;
-    
+    height: 922px;
     background-color:  #245852;
      
     display: grid;
-    grid-template-columns: 10.7% 30.2% 1.6% 47% 10.6%px;
-    grid-template-rows: 229px 516px 177px;
+    grid-template-columns: 10.7% 30.2% 1.6% 47% 10.5%;
+    grid-template-rows: 25% 56% 19%;
     align-items: center; 
     
     grid-template-areas: 
@@ -692,9 +708,10 @@ border-radius: 18.1125px;
 
 #img4{
     position: relative;
-right: 113.75px;
+right:12.15%;
 bottom: 0.1px;
-left: 97.11px;
+left: 5.05%;
+
 
 }
 #cir{
@@ -707,7 +724,7 @@ left: 97.11px;
 grid-area: ct1;
     font-family: Lato;
     font-style: normal;
-    font-weight: 600;
+   /* font-weight: 600;*/
     font-size: 0.905em;
     line-height: 157%;
 
@@ -765,7 +782,7 @@ color: #000000;
         grid-area: card2;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 25px 16px 16px 16px 17px 30px;
+        grid-template-rows: 21% 13% 13% 13% 14% 26%;
         grid-template-areas: 
     "ct-div"
     "."
@@ -776,16 +793,16 @@ color: #000000;
         }
 
 .card{
-    width: 296.14px;
-   height: 293.9px;
+   max-width: 296.14px;
+   max-height: auto;
     position: relative;
     background-color: #FFFFFF;
-    filter: drop-shadow(0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25));
-    top: -161px;
-    left: -61px;
+    filter: drop-shadow(0px 3.62249px 18.1125px rgba(92, 92, 92, 0.25));
+    bottom: 40%;
+    right: 27%;
     display: grid;
     grid-template-columns: 20.6% 4.4% 15% 19.6% 12.5% 9% 18.9%;
-    grid-template-rows: 23px 23px 14px 7px 58px 10px 19px 20px 120px;
+    grid-template-rows: 7.8% 7.8% 5% 2.5% 19.7% 3.4% 6.5% 6.8% 40.5%;
     justify-items: center;
     align-items: center;
     grid-template-areas: 
@@ -819,7 +836,7 @@ grid-area: tht;
     grid-area: text-but;
     width: 227px;
 height: 65px;
-left: 1061px;
+left: 60%;
 top: 3977px;
 
 background: #01996D;
@@ -833,7 +850,7 @@ color: #FFFFFF;
     grid-area: text4;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 39px 10px 158px 22px 81px 40px 65px;
+    grid-template-rows: 9% 2.4% 37% 5% 19.5% 9.6% 17.5%;
     
     grid-template-areas: 
     "tht"
@@ -850,11 +867,11 @@ color: #FFFFFF;
 .pagefour{
     position: relative;
     left: 0px;
-    top: 0px;
-    height: 936px;
+    top: 3%;
+    height: 18%;
     display: grid;
     grid-template-columns: 14% 36.4% 35.6% 14%;
-    grid-template-rows: 120px 648px 168px;
+    grid-template-rows: 13% 69% 18%;
     grid-template-areas: 
     ". . . ."
     ". image-card text4 ."
@@ -872,8 +889,8 @@ color: #FFFFFF;
         font-family: Avenir;
         font-style: normal;
         font-weight: 900;
-        font-size: 40px;
-        line-height: 55px;
+        font-size: 2.5em;
+        line-height: 137.5%;
         color: #FFFFFF;
 
     }
@@ -934,9 +951,10 @@ color: #FFFFFF;
 
     .footer-block{
         position: relative;
-        top: 0px;
+        margin-top: 0%;
         left: 0px;
-        max-height: 654px;
+        
+       height: 13%;
 
         display: grid;
         grid-template-columns: 14% 7% 79%;
