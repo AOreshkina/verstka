@@ -18,8 +18,33 @@
 
 
     body{
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size:100%;
+    }
+
+    @media only screen and (min-width: 1399px) and (max-width: 1780px) {
+        body{
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 80%;
+        }
+    }
+
+    @media only screen and (min-width: 1319px) and (max-width: 1398px) {
+        body{
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 76%;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1318px) {
+        body{
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 70%;
+        }
     }
 
  img {
@@ -50,8 +75,8 @@ header {
         position: absolute;
         
         top:1px;
-        max-width: 1920px;
-        height: 5099px;
+        width: 100%;
+       height: 5099px;
         
         display: grid; 
         grid-template-columns: 11% 39% 39%7 11%;
@@ -91,6 +116,8 @@ header {
         position: relative;
         top: 20%;
         left: 0px;
+        height: 100%;
+        width: 100%;
         /*max-height: 85px;
         max-width: 1920px;*/
         display: grid;
@@ -243,7 +270,7 @@ header {
         grid-area: buttonf;
         margin-top: 1px;
         width: 100%;
-        height: 65px;
+        height: 300%;
         background: #01996D;
         border: 1px solid #01996D;
         box-sizing: border-box;
@@ -575,6 +602,7 @@ header {
         
     }
     #img23{
+        width: 100%;
         grid-area: img023;
     }
 
@@ -985,8 +1013,9 @@ color: #FFFFFF;
         
    
     body{
-        margin-left: 1%;
-        margin-right: 1%;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 90%;
     }
      img {
         display: block;
@@ -1017,14 +1046,15 @@ color: #FFFFFF;
                 position: absolute;
                 
                 top:1px;
-                margin-right: 5%;
+                margin-left: 2%;
+                margin-right: 2%;
              
                 width: 100%;
-                height: auto;
+              /* height: 100%;*/
                 
                 display: grid; 
                 grid-template-columns: 100%;
-                grid-template-rows:   1.7% 85.3% 13%;
+                grid-template-rows:   1.304% 90.546% 8.15%;
             
                 grid-template-areas: 
                 "head"
@@ -1047,7 +1077,7 @@ color: #FFFFFF;
                 font-family: Lato;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 1.25em;
+                font-size: 90%;
                 line-height: 120%;
                 
             }
@@ -1057,16 +1087,32 @@ color: #FFFFFF;
                 grid-area: hb;
             }
         
+            
+            #start-trial-butt{
+                grid-area: starts;     
+                border: 1px solid #01996D;
+                box-sizing: border-box;
+                border-radius: 4px;
+                 width: 100%;
+                 height: 100%;
+                 background: #01996D;
+                 color: #ffffff;
+                 /*padding-left: 50px ;
+                 padding-top: 13px;
+                 padding-right: 50px;
+                 padding-bottom: 13px;*/}
+
+
             .header-container{
                 position: relative;
                 margin-left: 1%;
                 margin-right: 1%;
                 top: 20%;
-                left: 0px;
+                
                 /*max-height: 85px;
                 max-width: 1920px;*/
                 display: grid;
-                grid-template-columns: 20% 4% 47% 10% 15% 4%;
+                grid-template-columns: 16% 9% 38% 10% 26% 2%;
                 grid-template-rows:  51px;
                 align-items: center;
                 
@@ -1077,20 +1123,33 @@ color: #FFFFFF;
            
             }
 
+            .first-text{
+                grid-area: first-text-one;
+                display: grid;
+           
+                   grid-template-columns: 100%;
+                   grid-template-rows: 40% 5% 55%;
+                   
+                   
+                   grid-template-areas: 
+                   "h1f"
+                   "."
+                   "divf";}
+
             .first-page{
 
                 position: relative;
                 top: 0%;
                 left: 0%;
-                height: 17.55%;
+                height: 11.03%;
                 width: 100%;
 
                 background: url(../img/BG.png)  ; 
                 background-size: 300%;
                 background-position: left   top;
                 display: grid;
-                grid-template-columns:29% 66%;
-                grid-template-rows: 7.5% 30.5% 27% 20% 15%;
+                grid-template-columns:15% 50% 35%;
+                grid-template-rows: 13.5% 46% 3% 10% 27.5%;
                 align-items: start; 
                 
                 grid-template-areas: 
@@ -1100,28 +1159,237 @@ color: #FFFFFF;
                 ". bfp ."
                 ". . .";
          }
+
+         .how-it-work>.how-txt{
     
+            grid-area: howtxt;
+        }
+
+
+        .how-it-work>.understand{
+    
+            grid-area: unders;
+        }
+
+        how-it-work>.second-text{
+    
+            grid-area: secondtxt;
+            position: relative;
+           /* max-height:119px;
+            max-width: 671px;*/
+        }
+
+
+         .how-it-work{
+            grid-area: howitwork;
+           
+         
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 11.2% 54.6% 7% 21.5% 6.7%;
+            align-items: center; 
+            justify-items: start;
+          
+          grid-template-areas: 
+          "howtxt"
+          "unders"
+          "."
+          "secondtxt"
+          ".";
+        }
+        
+        
+        #pers{
+            grid-area: person;
+            position: relative;;
+            left: 50%;
+            
+            bottom: 120px;
+            
+            
+            font-family: Georgia;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.875em;
+            line-height: 150%;
+            /* identical to box height, or 45px */
+            
+            text-align: center;
+            
+            color: #000000;
+          }
+
+        .cl21>.second-text{
+            top: 0px;
+            grid-area: text001;
+            
+        }
+      
+        #img21{
+            
+            grid-area: img01;
+            width: 100%;
+            height: auto;
+        }
+
+
+        .cl21{
+            grid-area: cl21;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 15.8% 4.8% 13% 5.3% 43% 18.1%;
+            align-items: center; 
+            justify-items: start;
+          
+          grid-template-areas: 
+          "nadpis"
+          "."
+          "text001"
+          "."
+          "img01"
+          ".";
+
+        }
+
+        .cl22{
+            grid-area: cl22;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 25% 15.7% 4.8% 7.9% 3.3% 60%;
+            align-items: center; 
+            justify-items: start;
+          
+            grid-template-areas: 
+            "."
+            "nadp2"
+            "."
+            "text2"
+            "."
+            "img022";
+          }
+
+          .cl23{
+        grid-area: cl23;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30.8% 8.3% 4.4% 25.5% 31.2%;
+        align-items: center; 
+        justify-items: start;
+      
+        grid-template-areas: 
+        "nadp3"
+        "text3"
+        "."
+        "img023"
+        ".";
+    }
+
+      .image-end-text{
+         
+          
+          grid-area: imgtxt;
+          display: grid;
+          grid-template-columns: 10% 80% 10%;
+          grid-template-rows: 35% 5% 20% 5% 20%;
+          align-items: center; 
+          justify-items: start;
+          
+          grid-template-areas: 
+          
+          ". cl21 ." 
+          ". . ."
+          ". cl22 ."  
+          ". . ."
+          ". cl23 .";
+      
+        }
+   
     
 
 
          .secondpage{
 
             position: relative;
-            top: 0%;
-            left: -10%;
-            height: 31.5%;
+            top: 2%;
+            left: 0%;
+            height: 51.27%;
+            width: 100%;
            /* max-width: 1920px;*/
             background-color: #FFFFFF; 
             display: grid;
-            grid-template-columns: 14% 73.6% 12.4%;
-            grid-template-rows: 10.7% 15.5% 72.3% 1.5%;
+            grid-template-columns: 10% 85% 5%;
+            grid-template-rows: 1.5% 10.8% 1.5% 81.7% 4.5%;
             align-items: center; 
             
             grid-template-areas: 
             ". . ."
             ". howitwork ."
+            ". . ."
             ". imgtxt ."
             ". . .";
     
+         }
+
+
+         .text31{
+            grid-area: text031;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 15.7% 30.6% 6.4% 7.6% 11% 12.6% 16.1%;
+            align-items: center; 
+            grid-template-areas: 
+            "."
+            "header32"
+            "."
+            "header36"
+            "."
+            "button31"
+            "."
+        
+        }
+        video
+        {
+            max-width: 100%;
+            max-height: auto;
+        }
+        .video-class{
+            grid-area: vid;
+           width: 100%;
+         
+        }
+
+         .thirdpage{
+
+            position: relative;
+            top: 38px;
+            left: 0%;
+            height: 15.27%;
+            background-color:  #245852;
+             
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 25% 56% 19%;
+            align-items: center; 
             
+            grid-template-areas: 
+            ". . . . ."
+            ". text031 . vid ."
+            ". . . . ."
+        }
+
+        .pagefour{
+            position: relative;
+            left: 0px;
+            top: 3%;
+            height: 20.43%;
+            display: grid;
+            grid-template-columns: 14% 36.4% 35.6% 14%;
+            grid-template-rows: 13% 69% 18%;
+            grid-template-areas: 
+            ". . . ."
+            ". image-card text4 ."
+            ". . . ."
+            
+        }
+
         }
