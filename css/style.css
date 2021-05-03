@@ -1520,7 +1520,8 @@ color: #FFFFFF;
                 footer {
                    
                 grid-area: foot;
-               margin-top: 25%;
+                top: -300px;
+               /*margin-top: 0%;*/
                 background-color: #245852;
                 }
             
@@ -1533,11 +1534,11 @@ color: #FFFFFF;
                         margin-right: 2%;
                      
                         width: 100%;
-                      height: auto;
+                     height: auto;
                         
                         display: grid; 
                         grid-template-columns: 100%;
-                        grid-template-rows:   1fr auto 7fr;
+                        grid-template-rows:  82px 1fr 300px;
                     
                         grid-template-areas: 
                         "head"
@@ -1627,22 +1628,7 @@ color: #FFFFFF;
                     }
         /*First page adaptive*/
 
-       /* @media only screen and (max-width: 390px){
-
-            .button-fp > button{
-                grid-area: buttonf;
-                margin-top: 1px;
-                width: 100%;
-                /*height: 100%;
-                background: #01996D;
-                border: 1px solid #01996D;
-                box-sizing: border-box;
-                border-radius: 4px;
-                color:#FFFFFF;
-        
-            }
-
-        }*/
+     
 
 
                         .button-fp > button{
@@ -1971,13 +1957,16 @@ color: #FFFFFF;
                 /*page four layot*/
                 
         .card{
-            max-width: 50%;
+            grid-area: card-c;
+             width: 65%;
             max-height: auto;
+            margin-bottom: 2px;
+
              position: relative;
              background-color: #FFFFFF;
              filter: drop-shadow(0px 3.62249px 18.1125px rgba(92, 92, 92, 0.25));
-           /*  bottom: 35%;
-             right: 27%;*/
+            bottom: 35%;
+             right: 10%;
              display: grid;
              grid-template-columns: 20.6% 4.4% 15% 19.6% 12.5% 9% 18.9%;
              grid-template-rows: 7.8% 7.8% 5% 2.5% 19.7% 3.4% 6.5% 6.8% 40.5%;
@@ -1999,25 +1988,60 @@ color: #FFFFFF;
          
          .image-and-card{
              grid-area: image-card;
-             width: 90%;
-             max-width: auto;
-             max-height: auto;
+             left: 30%;
+             /*width: 180%;*/
+             max-width: 100%;
+            height: auto;
          }
+         #img4{
+            grid-area: image-card;
+            left: 15%;
+            width: 300%;
+          /*  max-width: 100%;*/
+           height: 100%;
+           object-fit: cover;
+        }
+       
+
+
+       
+        .pagefour > .text{
+            grid-area: text4;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 11% 3% 1% 40% 16% 13% 10% 15%;
+            align-items: start;
+            justify-items: start;
+            grid-template-areas: 
+            ". . . . ."
+            "tht tht . . ."
+            ". . . . ."
+            "tu tu tu tu tu"
+            ". . . . ."
+            "tst tst tst tst tst"
+            ". . . . ."
+            "text-but text-but text-but text-but text-but";
+        
+        
+        }
+        
+         
                 .pagefour{
                    position: relative;
                    /* left: 0px;*/
                     top: 0%;
                     height: auto;
                     display: grid;
-                    grid-template-columns: 4fr 70% 1fr;
-                    grid-template-rows: 4% 46% 46% 4%;
-                    justify-items: end;
-                    align-items: stretch;
+                    grid-template-columns: 1fr  1fr  1fr  1fr  1fr  1fr;
+                    grid-template-rows:  14% 32% 3% 48% ;
+                    justify-items: stretch;
+                  /*  align-items: stretch;*/
                     grid-template-areas: 
-                    ". . . "
-                    ". image-card ."
-                   ". text4 ."
-                    ". . .";
+                   
+                    ". . . . . ."
+                    ". image-card  image-card  image-card  image-card ."
+                    ". . . . . ."
+                    ". text4 text4 text4 text4 .";
                     
                 }
         
@@ -2029,8 +2053,8 @@ color: #FFFFFF;
                 /*   height: auto;*/
             
                     display: grid;
-                    grid-template-columns: 14% 7% 79%;
-                    grid-template-rows: 95px 40px 75px 30px 60px 30px 60px 30px 60px 30px 144px;
+                    grid-template-columns: 14% 27% 59%;
+                    grid-template-rows: 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 40px;
                     justify-items: start;
                     grid-template-areas: 
                     ". . ."
