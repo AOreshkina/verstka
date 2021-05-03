@@ -1280,17 +1280,17 @@ color: #FFFFFF;
           .cl23{
         grid-area: cl23;
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr 80% 1fr;
         grid-template-rows: 15.8% 4.8% 13% 5.3% 61.1%;
        /* align-items: center; 
         justify-items: start;*/
       
         grid-template-areas: 
-        "nadp3"
-        "."
-        "text3"
-        "."
-        "img023";
+        ". nadp3 ."
+        ". . ."
+        ". text3 ."
+        ". . ."
+        ". img023 .";
     }
 
       .image-end-text{
