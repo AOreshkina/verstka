@@ -407,7 +407,7 @@ header {
 
   #cl01{
    
-    position: relative;
+    
     /*width: 157px;
     height: 225px;*/
     left: 0%;
@@ -1009,6 +1009,8 @@ color: #FFFFFF;
         ". . .";
     }
 
+
+    /*Tablet or small screen*/
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
         
    
@@ -1136,29 +1138,32 @@ color: #FFFFFF;
                    "."
                    "divf";}
 
-            .first-page{
+                   .first-page{
 
-                position: relative;
-                top: 0%;
-                left: 0%;
-                height: 11.03%;
-                width: 100%;
+                    position: relative;
+                    top: 0%;
+                    left: 0%;
+                    height: 11.03%;
+                    width: 100%;
+        
+                    background: url(../img/BG.png)  ; 
+                    background-size: 300%;
+                    background-position: left   top;
+                    display: grid;
+                    grid-template-columns:15% 50% 35%;
+                    grid-template-rows: 13.5% 46% 3% 10% 27.5%;
+                    align-items: start; 
+                    
+                    grid-template-areas: 
+                    ". . ."
+                    ". first-text-one ."
+                    ". . ."
+                    ". bfp ."
+                    ". . .";
+             }
+           
 
-                background: url(../img/BG.png)  ; 
-                background-size: 300%;
-                background-position: left   top;
-                display: grid;
-                grid-template-columns:15% 50% 35%;
-                grid-template-rows: 13.5% 46% 3% 10% 27.5%;
-                align-items: start; 
-                
-                grid-template-areas: 
-                ". . ."
-                ". first-text-one ."
-                ". . ."
-                ". bfp ."
-                ". . .";
-         }
+          
 
          .how-it-work>.how-txt{
     
@@ -1228,8 +1233,8 @@ color: #FFFFFF;
         #img21{
             
             grid-area: img01;
-            width: 100%;
-            height: auto;
+            max-width: 100%;
+            
         }
 
 
@@ -1237,7 +1242,7 @@ color: #FFFFFF;
             grid-area: cl21;
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows: 15.8% 4.8% 13% 5.3% 43% 18.1%;
+            grid-template-rows: 15.8% 4.8% 13% 5.3% 61.1%;
             align-items: center; 
             justify-items: start;
           
@@ -1246,8 +1251,7 @@ color: #FFFFFF;
           "."
           "text001"
           "."
-          "img01"
-          ".";
+          "img01";
 
         }
 
@@ -1255,12 +1259,12 @@ color: #FFFFFF;
             grid-area: cl22;
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows: 25% 15.7% 4.8% 7.9% 3.3% 60%;
+            grid-template-rows:  15.8% 4.8% 13% 5.3% 61.1%;
             align-items: center; 
             justify-items: start;
           
             grid-template-areas: 
-            "."
+            
             "nadp2"
             "."
             "text2"
@@ -1272,16 +1276,16 @@ color: #FFFFFF;
         grid-area: cl23;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 30.8% 8.3% 4.4% 25.5% 31.2%;
+        grid-template-rows: 15.8% 4.8% 13% 5.3% 61.1%;
         align-items: center; 
         justify-items: start;
       
         grid-template-areas: 
         "nadp3"
+        "."
         "text3"
         "."
-        "img023"
-        ".";
+        "img023";
     }
 
       .image-end-text{
@@ -1289,8 +1293,9 @@ color: #FFFFFF;
           
           grid-area: imgtxt;
           display: grid;
-          grid-template-columns: 10% 80% 10%;
-          grid-template-rows: 35% 5% 20% 5% 20%;
+          margin-top: 2%;
+          grid-template-columns: 1fr 80% 1fr;
+          grid-template-rows: 30% 5% 30% 5% 30%;
           align-items: center; 
           justify-items: start;
           
@@ -1303,7 +1308,8 @@ color: #FFFFFF;
           ". cl23 .";
       
         }
-   
+
+      
     
 
 
@@ -1311,13 +1317,13 @@ color: #FFFFFF;
 
             position: relative;
             top: 2%;
-            left: 0%;
-            height: 51.27%;
+          
+            height: auto;
             width: 100%;
            /* max-width: 1920px;*/
             background-color: #FFFFFF; 
             display: grid;
-            grid-template-columns: 10% 85% 5%;
+            grid-template-columns: 12% 85% 3%;
             grid-template-rows: 1.5% 10.8% 1.5% 81.7% 4.5%;
             align-items: center; 
             
