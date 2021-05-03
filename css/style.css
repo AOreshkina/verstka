@@ -671,7 +671,7 @@ header {
 .text31 > button {
     grid-area: button31;
     width: 40%;
-    height: 65px;
+    height: 100%;
     left: 10.7%;
     top: 3184px;
 
@@ -1219,7 +1219,7 @@ color: #FFFFFF;
         
         
         #pers{
-            grid-area: person;
+            
             position: relative;;
             left: 50%;
             
@@ -1627,13 +1627,13 @@ color: #FFFFFF;
                     }
         /*First page adaptive*/
 
-        @media only screen and (max-width: 390px){
+       /* @media only screen and (max-width: 390px){
 
             .button-fp > button{
                 grid-area: buttonf;
                 margin-top: 1px;
                 width: 100%;
-                /*height: 100%;*/
+                /*height: 100%;
                 background: #01996D;
                 border: 1px solid #01996D;
                 box-sizing: border-box;
@@ -1642,14 +1642,14 @@ color: #FFFFFF;
         
             }
 
-        }
+        }*/
 
 
                         .button-fp > button{
                             grid-area: buttonf;
                             margin-top: 1px;
                             width: 100%;
-                            height: 1fr;
+                           /* height: 1fr;*/
                             background: #01996D;
                             border: 1px solid #01996D;
                             box-sizing: border-box;
@@ -1743,12 +1743,52 @@ color: #FFFFFF;
                 }
                 
                 
-                #pers{
+               #pers{
+                 
+                    position: relative;
+                    right: 70%;
+                    
+                    bottom: 80px;
+                    
+                    
+                    font-family: Georgia;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 1.875em;
+                    line-height: 150%;
+                    /* identical to box height, or 45px */
+                    
+                   /* text-align: center;*/
+                    
+                    color: #000000;
+                  }
+
+                  #w-and-u{
+                    grid-area: person;
+                    position: relative;
+                    left: 50px;
+                    
+                    bottom: 75px;
+                    
+                    
+                    
+                    font-family: Georgia;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 1.55em;
+                    line-height: 150%;
+                    /* identical to box height, or 45px */
+                    
+                    text-align: center;
+                    
+                    color: #000000;
+                  }
+
+                  #alivio03{
                     grid-area: person;
                     position: relative;;
-                    left: 50%;
-                    
-                    bottom: 120px;
+                    left: 50px;
+                    bottom: 75px;
                     
                     
                     font-family: Georgia;
@@ -1772,8 +1812,8 @@ color: #FFFFFF;
                 #img21{
                     
                     grid-area: img01;
-                    width: auto;
-                    height: auto;
+                    width: 100%;
+                    height: 100%;
                     
                 }
         
@@ -1781,8 +1821,8 @@ color: #FFFFFF;
                 .cl21{
                     grid-area: cl21;
                     display: grid;
-                    grid-template-columns: 2fr 60% 2fr;
-                    grid-template-rows: 15.8% 2% 13% 6% 63.2%;
+                    grid-template-columns: 1fr 80% 1fr;
+                    grid-template-rows: 16% 6% 25% 4% 39%;
                    align-items: stretch; 
                    /* justify-items: stretch;*/
                   
@@ -1798,8 +1838,8 @@ color: #FFFFFF;
                 .cl22{
                     grid-area: cl22;
                     display: grid;
-                    grid-template-columns: 2fr 60% 2fr;
-                    grid-template-rows: 15.8% 4% 13% 4% 63.2%;
+                    grid-template-columns: 1fr 80% 1fr;
+                    grid-template-rows: 16% 6% 20% 4% 44%;
                     align-items: stretch;
                  /*   justify-self: stretch; 
                     align-self: stretch;*/
@@ -1815,8 +1855,8 @@ color: #FFFFFF;
                   .cl23{
                 grid-area: cl23;
                 display: grid;
-                grid-template-columns: 2fr 60% 2fr;
-                grid-template-rows: 15.8% 5% 13% 6% 60.2%;
+                grid-template-columns: 1fr 80% 1fr;
+                    grid-template-rows: 16% 6% 20% 4% 44%;
                 align-items: stretch; 
                 /*justify-items: stretch;*/
               
@@ -1835,7 +1875,7 @@ color: #FFFFFF;
                   display: grid;
                   margin-top: 20%;
                   grid-template-columns: 2fr 80% 1fr;
-                  grid-template-rows: 30% 2% 30% 2% 30% 6%;
+                  grid-template-rows: 32% 1% 32% 2% 32% 1%;
                   justify-items:stretch;
                 /*  align-items: center; 
                   justify-items: start;*/
@@ -1858,7 +1898,7 @@ color: #FFFFFF;
                  .secondpage{
         
                     position: relative;
-                    top: 2%;
+                    top: 1%;
                   
                     height: auto;
                     width: 100%;
@@ -1880,6 +1920,7 @@ color: #FFFFFF;
         
                     /*third page adaptive*/
                  .text31{
+                     font-size: 80%;
                     grid-area: text031;
                     display: grid;
                     grid-template-columns: 100%;
@@ -1916,11 +1957,11 @@ color: #FFFFFF;
                      
                     display: grid;
                     grid-template-columns: 1fr 85% 1fr;
-                    grid-template-rows: 48% 48% 4%;
+                    grid-template-rows: 4% 46% 46% 4%;
                     align-items: center; 
                     
                     grid-template-areas: 
-                    
+                    ". . ."
                     ". text031 ."
                     ". vid ."
                     ". . .";
