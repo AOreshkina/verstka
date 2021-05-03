@@ -1161,7 +1161,7 @@ color: #FFFFFF;
         
                     background: url(../img/BG.png)  no-repeat center center; 
                     background-size: cover;
-                    background-position: left   top;
+                  /*  background-position: left   top;*/
                     display: grid;
                     grid-template-columns:15% 50% 35%;
                     grid-template-rows: 13.5% 46% 3% 10% 27.5%;
@@ -1614,7 +1614,7 @@ color: #FFFFFF;
                         max-width: 1920px;*/
                         display: grid;
                         grid-template-columns: 5% 20%  70% 5%;
-                        grid-template-rows: 70% 30%;
+                        grid-template-rows: 1fr 1fr;
                         align-items: center;
                         justify-items: stretch;
                         
@@ -1626,13 +1626,46 @@ color: #FFFFFF;
                    
                     }
         /*First page adaptive*/
+
+        @media only screen and (max-width: 390px){
+
+            .button-fp > button{
+                grid-area: buttonf;
+                margin-top: 1px;
+                width: 100%;
+                /*height: 100%;*/
+                background: #01996D;
+                border: 1px solid #01996D;
+                box-sizing: border-box;
+                border-radius: 4px;
+                color:#FFFFFF;
+        
+            }
+
+        }
+
+
+                        .button-fp > button{
+                            grid-area: buttonf;
+                            margin-top: 1px;
+                            width: 100%;
+                            height: 1fr;
+                            background: #01996D;
+                            border: 1px solid #01996D;
+                            box-sizing: border-box;
+                            border-radius: 4px;
+                            color:#FFFFFF;
+                    
+                        }
+
+
         
                     .first-text{
                         grid-area: first-text-one;
                         display: grid;
                    
                            grid-template-columns: 100%;
-                           grid-template-rows: 40% 5% 55%;
+                           grid-template-rows: 40% 10% 50%;
                            
                            
                            grid-template-areas: 
@@ -1650,20 +1683,21 @@ color: #FFFFFF;
                             height: 11.03%;
                             width: 100%;
                 
-                            background: url(../img/BG.png)  no-repeat center center; 
+                            background: url(../img/BG.png)  no-repeat center top; 
                             background-size: cover;
-                            background-position: left   top;
+                        /*  background-position: center   center;*/
                             display: grid;
-                            grid-template-columns:15% 50% 35%;
-                            grid-template-rows: 13.5% 46% 3% 10% 27.5%;
+                            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                            grid-template-rows: 1fr 1fr 1fr 2fr 1fr 2fr;
                             align-items: start; 
                             
                             grid-template-areas: 
-                            ". . ."
-                            ". first-text-one ."
-                            ". . ."
-                            ". bfp ."
-                            ". . .";
+                            ". . . . . ."
+                            ". first-text-one first-text-one first-text-one first-text-one ."
+                            ". first-text-one first-text-one first-text-one first-text-one ."
+                            ". . . . . ."
+                            ". bfp bfp bfp bfp ."
+                            ". . . . . .";
                      }
                    
         
