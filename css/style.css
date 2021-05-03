@@ -23,6 +23,13 @@
         font-size:100%;
     }
 
+    a{
+        cursor: pointer;
+    }
+   
+    button{
+        cursor: pointer;
+    }
     @media only screen and (min-width: 1399px) and (max-width: 1780px) {
         body{
             margin-left: auto;
