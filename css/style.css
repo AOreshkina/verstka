@@ -76,7 +76,7 @@ header {
         
         top:1px;
         width: 100%;
-     /*  height: 5099px;*/
+       height: 5099px;
         
         display: grid; 
         grid-template-columns: 11% 39% 39%7 11%;
@@ -302,7 +302,9 @@ header {
         left: 0%;
         height: 17.55%;
         width: 100%;
-        background-image: url(../img/BG.png); 
+        background: url(../img/BG.png)  no-repeat center center; 
+        background-size: cover;
+        background-position: left   top;
         display: grid;
         grid-template-columns: 14% 23% 63%;
         grid-template-rows: 19.5% 38.6% 2% 7.3% 32.6%;
@@ -316,7 +318,7 @@ header {
         ". . .";
  }
 
- /*second page*/
+ /*second page layot*/
 
  .how-txt{
 
@@ -832,12 +834,12 @@ color: #000000;
         }
 
 .card{
-   max-width: 296.14px;
+   max-width: 50%;
    max-height: auto;
     position: relative;
     background-color: #FFFFFF;
     filter: drop-shadow(0px 3.62249px 18.1125px rgba(92, 92, 92, 0.25));
-    bottom: 40%;
+    bottom: 35%;
     right: 27%;
     display: grid;
     grid-template-columns: 20.6% 4.4% 15% 19.6% 12.5% 9% 18.9%;
@@ -860,6 +862,9 @@ color: #000000;
 
 .image-and-card{
     grid-area: image-card;
+    
+    max-width: 100%;
+    height: auto;
 }
 
 .text>.how-txt{
@@ -1128,6 +1133,7 @@ color: #FFFFFF;
                 
            
             }
+/*First page adaptive*/
 
             .first-text{
                 grid-area: first-text-one;
@@ -1142,6 +1148,8 @@ color: #FFFFFF;
                    "."
                    "divf";}
 
+                   /*Layot first*/
+
                    .first-page{
 
                     position: relative;
@@ -1150,8 +1158,8 @@ color: #FFFFFF;
                     height: 11.03%;
                     width: 100%;
         
-                    background: url(../img/BG.png)  ; 
-                    background-size: 300%;
+                    background: url(../img/BG.png)  no-repeat center center; 
+                    background-size: cover;
                     background-position: left   top;
                     display: grid;
                     grid-template-columns:15% 50% 35%;
@@ -1168,6 +1176,7 @@ color: #FFFFFF;
            
 
           
+/*Second page adaptive*/
 
          .how-it-work>.how-txt{
     
@@ -1246,7 +1255,7 @@ color: #FFFFFF;
         .cl21{
             grid-area: cl21;
             display: grid;
-            grid-template-columns: 1fr 80% 1fr;
+            grid-template-columns: 1fr 60% 3fr;
             grid-template-rows: 15.8% 4.8% 13% 5.3% 61.1%;
          /*   align-items: center; 
             justify-items: start;*/
@@ -1263,7 +1272,7 @@ color: #FFFFFF;
         .cl22{
             grid-area: cl22;
             display: grid;
-            grid-template-columns: 1fr 80% 1fr;
+            grid-template-columns: 1fr 60% 3fr;
             grid-template-rows:  15.8% 4.8% 13% 5.3% 61.1%;
         /*    align-items: center; 
             justify-items: start;*/
@@ -1280,7 +1289,7 @@ color: #FFFFFF;
           .cl23{
         grid-area: cl23;
         display: grid;
-        grid-template-columns: 1fr 80% 1fr;
+        grid-template-columns: 1fr 60% 3fr;
         grid-template-rows: 15.8% 4.8% 13% 5.3% 61.1%;
        /* align-items: center; 
         justify-items: start;*/
@@ -1316,7 +1325,7 @@ color: #FFFFFF;
 
       
     
-
+/*Second page's layot*/
 
          .secondpage{
 
@@ -1341,7 +1350,7 @@ color: #FFFFFF;
     
          }
 
-
+            /*third page adaptive*/
          .text31{
             grid-area: text031;
             display: grid;
@@ -1355,7 +1364,7 @@ color: #FFFFFF;
             "header36"
             "."
             "button31"
-            "."
+            ".";
         
         }
         video
@@ -1372,9 +1381,9 @@ color: #FFFFFF;
          .thirdpage{
 
             position: relative;
-            top: 38px;
+            top: 3%;
             left: 0%;
-            height: 15.27%;
+            height: auto;
             background-color:  #245852;
              
             display: grid;
@@ -1383,15 +1392,15 @@ color: #FFFFFF;
             align-items: center; 
             
             grid-template-areas: 
-            ". . . . ."
-            ". text031 . vid ."
-            ". . . . ."
+            "."
+            "vid"
+            "text031";
         }
 
         .pagefour{
             position: relative;
             left: 0px;
-            top: 3%;
+            top: 15%;
             height: 20.43%;
             display: grid;
             grid-template-columns: 14% 36.4% 35.6% 14%;
@@ -1402,5 +1411,32 @@ color: #FFFFFF;
             ". . . ."
             
         }
+
+        .footer-block{
+            position: relative;
+            margin-top: 20%;
+            left: 0px;
+            
+           height: 13%;
+    
+            display: grid;
+            grid-template-columns: 14% 7% 79%;
+            grid-template-rows: 95px 40px 75px 30px 60px 30px 60px 30px 60px 30px 144px;
+            justify-items: start;
+            grid-template-areas: 
+            ". . ."
+            ". p-foot ."
+            ". . ."
+            ". a1-foot ." 
+            ". . ."
+            ". a2-foot ."
+            ". . ."
+            ". a3-foot ."
+            ". . ."
+            ". a4-foot ."
+            ". . .";
+        }
+    
+    
 
         }
