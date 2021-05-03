@@ -863,7 +863,7 @@ color: #000000;
 .image-and-card{
     grid-area: image-card;
     
-    max-width: 100%;
+    width: auto;
     height: auto;
 }
 
@@ -1049,8 +1049,8 @@ color: #FFFFFF;
         footer {
            
         grid-area: foot;
-     /*   margin-top: 12%;*/
-        background-color: #eb0b73;
+       margin-top: 25%;
+        background-color: #245852;
         }
     
     
@@ -1066,7 +1066,7 @@ color: #FFFFFF;
                 
                 display: grid; 
                 grid-template-columns: 100%;
-                grid-template-rows:   1fr auto 8fr;
+                grid-template-rows:   1fr auto 7fr;
             
                 grid-template-areas: 
                 "head"
@@ -1390,39 +1390,77 @@ color: #FFFFFF;
             background-color:  #245852;
              
             display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 5% 56% 39%;
+            grid-template-columns: 1fr 85% 1fr;
+            grid-template-rows: 48% 48% 4%;
             align-items: center; 
             
             grid-template-areas: 
-            "."
-            "vid"
-            "text031";
+            
+            ". text031 ."
+            ". vid ."
+            ". . .";
         }
 
 
         /*page four layot*/
+        
+.card{
+    max-width: 50%;
+    max-height: auto;
+     position: relative;
+     background-color: #FFFFFF;
+     filter: drop-shadow(0px 3.62249px 18.1125px rgba(92, 92, 92, 0.25));
+   /*  bottom: 35%;
+     right: 27%;*/
+     display: grid;
+     grid-template-columns: 20.6% 4.4% 15% 19.6% 12.5% 9% 18.9%;
+     grid-template-rows: 7.8% 7.8% 5% 2.5% 19.7% 3.4% 6.5% 6.8% 40.5%;
+     justify-items: center;
+     align-items: center;
+     grid-template-areas: 
+     ". . . . . . ."
+     ". . ct1 ct1 ct1 . ."
+     ". . line-c line-c line-c . ."
+     ". . . . . . ."
+     ". . . img-c . . ."
+     ". . . . . . ."
+     ". . . card-p . . ."
+     ". . . . . . ."
+     ". card2 card2 card2 card2 card2 .";
+ 
+ 
+ }
+ 
+ .image-and-card{
+     grid-area: image-card;
+     width: 90%;
+     max-width: auto;
+     max-height: auto;
+ }
         .pagefour{
-            position: relative;
-            left: 0px;
+           position: relative;
+           /* left: 0px;*/
             top: 0%;
             height: auto;
             display: grid;
-            grid-template-columns: 14% 36.4% 35.6% 14%;
-            grid-template-rows: 13% 69% 18%;
+            grid-template-columns: 4fr 70% 1fr;
+            grid-template-rows: 4% 46% 46% 4%;
+            justify-items: end;
+            align-items: stretch;
             grid-template-areas: 
-            ". . . ."
-            ". image-card text4 ."
-            ". . . ."
+            ". . . "
+            ". image-card ."
+           ". text4 ."
+            ". . .";
             
         }
 
         .footer-block{
             position: relative;
-            margin-top: 20%;
+            margin-top: 0%;
             left: 0px;
             
-           height: 13%;
+        /*   height: auto;*/
     
             display: grid;
             grid-template-columns: 14% 7% 79%;
